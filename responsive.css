@@ -1,0 +1,134 @@
+/* === Umum === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+/* === HERO Section === */
+.hero {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero .btn {
+  margin: 10px 5px;
+}
+
+/* === Profile Image === */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-bottom: 20px;
+}
+
+/* === Section Layout === */
+section {
+  padding: 60px 20px;
+  background-color: white;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* === Contact Card === */
+.contact-card {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact-item .icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+/* === Sosial Media === */
+.sosmed {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sosmed-link {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.sosmed-link:hover {
+  color: #007bff;
+}
+
+/* === Responsive Media Queries === */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hero .btn {
+    display: block;
+    margin: 10px auto;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sosmed-link {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+
+  .sosmed-link {
+    display: block;
+    margin: 8px auto;
+  }
+}
